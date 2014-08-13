@@ -1,0 +1,2 @@
+defmodule Structurez do
+end
