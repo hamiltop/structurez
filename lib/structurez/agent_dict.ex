@@ -77,6 +77,5 @@ defimpl Enumerable, for: AgentDict do
 end
 
 defimpl Collectable, for: AgentDict do
-  defdelegate empty(_map), to: AgentDict
   defdelegate into(original), to: AgentDict
 end
