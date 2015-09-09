@@ -65,11 +65,6 @@ defmodule AgentDict do
   end
 end
 
-defimpl Access, for: AgentDict do
-  defdelegate get(source, key), to: AgentDict
-  defdelegate get_and_update(source, key, fun), to: AgentDict
-end
-
 defimpl Enumerable, for: AgentDict do
   defdelegate reduce(source, key, fun), to: AgentDict
   defdelegate member?(source, key), to: AgentDict
